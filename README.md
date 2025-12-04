@@ -1,11 +1,12 @@
 # Smart Travel Booking Platform
 
 ## Overview
-A travel booking system built with Spring Boot 3+ that uses small services (microservices) that talk to each other using REST API, Feign Client, and WebClient to handle bookings.
+A travel booking system built with Spring Boot 3+ that utilizes small services (microservices) communicating with each other via REST APIs, Feign Clients, and WebClient to handle bookings.
 
 ## Architecture
 
 ### Microservices (6)
+<img width="3123" height="1412" alt="Untitled diagram-2025-12-04-120527" src="https://github.com/user-attachments/assets/d6d5a09d-d611-45d6-8543-73c7123b8e8d" />
 
 
 ### Service Details
@@ -127,31 +128,43 @@ Visit these links to see if everything started:
 ```
 POST http://localhost:8081/api/users
 ```
+<img width="1920" height="1030" alt="1 Create User" src="https://github.com/user-attachments/assets/85502a21-247a-4e90-a676-41dabbc1fcff" />
+
 
 **Step 2: Create a Flight**
 ```
 POST http://localhost:8082/api/flights
 ```
+<img width="1920" height="1030" alt="3 Create Flight" src="https://github.com/user-attachments/assets/91bd5fd3-50bb-4e0e-9a88-ad2c83273583" />
+
 
 **Step 3: Create a Hotel**
 ```
 POST http://localhost:8083/api/hotels
 ```
+<img width="1920" height="1027" alt="2 Create Hotel" src="https://github.com/user-attachments/assets/828afcd1-2c0b-4a22-9ad3-6bda10b43a3c" />
+
 
 **Step 4: Create a Booking (This runs everything)**
 ```
 POST http://localhost:8086/api/bookings
 ```
+<img width="1920" height="1030" alt="4 Create Booking" src="https://github.com/user-attachments/assets/3ecb2745-91bf-4917-b0b2-431f379c4c1b" />
+
 
 **Step 5: Make a Payment**
 ```
 POST http://localhost:8085/api/payments/process
 ```
+<img width="1920" height="1030" alt="6 Create Paymnet" src="https://github.com/user-attachments/assets/7b38f1c6-4026-45a1-a82e-069aea3c7843" />
+
 
 **Step 6: Check the Booking**
 ```
 GET http://localhost:8086/api/bookings/1
 ```
+<img width="1920" height="1028" alt="7 GET Booking Updated Notification" src="https://github.com/user-attachments/assets/70ead38e-73be-42b0-9b9a-017a1ca5e11c" />
+
 
 ## What This System Can Do
 
