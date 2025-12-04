@@ -36,7 +36,7 @@ A travel booking system built with Spring Boot 3+ that utilizes small services (
 
 ### 1. Get the Code
 ```bash
-git clone https://github.com/Dulithapathum/ITS-4243-Assignment-02.git
+git clone https://github.com/Dulithapathum/ITS-4243-Assignment-02.git .
 ```
 
 ### 2. Build All Services
